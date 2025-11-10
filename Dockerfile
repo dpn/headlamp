@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 # Final container image
-ARG IMAGE_BASE=alpine:3.20.6@sha256:de4fe7064d8f98419ea6b49190df1abbf43450c1702eeb864fe9ced453c1cc5f
+ARG IMAGE_BASE=alpine:3.20.8@sha256:765942a4039992336de8dd5db680586e1a206607dd06170ff0a37267a9e01958
 FROM ${IMAGE_BASE} AS image-base
 
 FROM --platform=${BUILDPLATFORM} golang:1.24.6@sha256:2c89c41fb9efc3807029b59af69645867cfe978d2b877d475be0d72f6c6ce6f6 AS backend-build
